@@ -10,8 +10,7 @@ window.addEventListener("load", function(){
 
   signOutButton.addEventListener("click", function(){
       firebase.auth().signOut();
-
-      console.log("sign out")
+      console.log("sign out");
   });
 
   firebase.auth().onAuthStateChanged(function(user) {
